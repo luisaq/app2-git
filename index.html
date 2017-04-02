@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicación</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/app-2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--Grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/no-internet.png','imagenes/memoria.jpg','imagenes/Hd_Logo.png')">
+
+ <div data-role="page" id="Principal" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Telefonía Celular</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>¿Qué es un télefono celular?</h2>
+     <p>Muestra información sobre los télefonos celulares</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Historia del télefono celular</h2>
+     <p>Se muestra la historia que tiene en télefono celular</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Clasificación de la telefonía celular</h2>
+    <p>Se muestra las diferentes clasificaciones que hay</p>
+   </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Compañias que manejan la telefonía celular en México</h2>
+    <p>Se muestran las diferentes compañias</p>
+   </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Télefonos celulares del futuro</h2>
+    <p>Se muestra los celulares mas modernos</p>
+   </a>
+  </li>
+  </ul>
+</div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+  <div><img src="imagenes/folder-iphone-icon.png" width="89" height="95">
+  </div>
+  <div>
+   <h4>Aplicación Dos</h4>
+   <h4>Luisa Quintero Flores</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Qué es un télefono celular</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h4>Un teléfono móvil o celular tambien es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. El enlace de radiofrecuencia establece una conexión con los sistemas de conmutación de un operador de telefonía móvil, que proporciona acceso a la red telefónica pública conmutada (PSTN).    </h4>
+   <h3><br>
+     <img src="imagenes/Celular (2).jpg" width="342" height="240"> </h3>
+   <h4><br>
+     Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</h4>
+  </div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+  <h4>Aplicación dos, LQF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Historia del telefono celular</h1>
+ </div>
+ <div data-role="content" align="left">
+  <div>
+   <h4>Los primeros equipos eran grandes y pesados, por lo que estaban casi exclusivamente destinados a un uso a bordo de vehículos. Generalmente se instalaba el equipo de radio en el maletero y se pasaba un cable con el teléfono hasta el salpicadero del coche. Si bien en los años 40 el equipo ocupaba todo el maletero, en los años 60 su tamaño se había reducido al de un maletín gracias al invento del transistor. El transistor, creado en 1948 en los Laboratorios Bell, sustituiría los tubos de vacío para amplificar y conmutar señales, inaugurando la era de la miniaturización de los aparatos electrónicos.
+   <br>
+   Cada teléfono funcionaba como un transmisor que abarcaba toda la ciudad con una frecuencia fija, o en otras palabras, cada teléfono era una estación de radio para toda la ciudad, que transmitía señales con mucha potencia para poder ser recibido en el mayor área posible. Esto suponía un problema debido a la escasez de espectro de radiofrecuencia útil, lo que provocaba que solo unos 44 usuarios podían comunicarse simultáneamente en una ciudad.</h4>
+   </div>
+</div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Celular de antes</h1>
+    <div>
+    <p align="center">Telefonos Antiguos</p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/moviles.jpg" width="392" height="284"></div>
+   </div>
+   <div data-role="content" align="left">
+   <div>
+   <h4>En la década de 1990 nace la segunda generación, que utiliza sistemas como GSM, IS-136, iDEN e IS-95. Las frecuencias utilizadas en Europa fueron de 900 y 1800 MHz.
+
+El desarrollo de esta generación tiene como piedra angular la digitalización de las comunicaciones. Las comunicaciones digitales ofrecen una mejor calidad de voz que las analógicas, además se aumenta el nivel de seguridad y se simplifica la fabricación del Terminal (con la reducción de costos que ello conlleva). En esta época nacen varios estándares de comunicaciones móviles: D-AMPS (EE. UU.), Personal Digital Cellular (Japón), cdmaOne (EE. UU. y Asia) y GSM.
+
+Muchas operadoras telefónicas móviles implementaron Acceso múltiple por división de tiempo (TDMA) y Acceso múltiple por división de código (CDMA) sobre las redes Amps existentes convirtiéndolas así en redes D-AMPS. Esto trajo como ventaja para estas empresas poder lograr una migración de señal analógica a señal digital sin tener que cambiar elementos como antenas, torres, cableado, etc. Inclusive, esta información digital se transmitía sobre los mismos canales (y por ende, frecuencias de radio) ya existentes y en uso por la red analógica. La gran diferencia es que con la tecnología digital se hizo posible hacer Multiplexion, tal que en un canal antes destinado a transmitir una sola conversación a la vez se hizo posible transmitir varias conversaciones de manera simultánea, incrementando así la capacidad operativa y el número de usuarios que podían hacer uso de la red en una misma celda en un momento dado.<br>
+
+El estándar que ha universalizado la telefonía móvil ha sido el GSM (Global System for Mobile communications). Se trata de un estándar europeo nacido de los siguientes principios:<br>
+<ol>
+  <li>Buena calidad de voz.</li>
+  <li>Itinerancia (Roaming).</li>
+  <li>Deseo de implantación internacional.</li>
+  <li>Terminales realmente portátiles (de reducido peso y tamaño) a un precio accesible.</li>
+  <li>Compatibilidad con la RDSI (Red Digital de Servicios Integrados).</li>
+  <li>Instauración de un mercado competitivo con multitud de operadores y fabricantes.</li>
+  </ol></h4>  
+   </div>
+</div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Celular de Moderno</h1>
+    <div>
+    <p align="center">Esta es una imagen de uno de los celulares modernos</p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/celular6.jpg" width="397" height="264">
+    </div>
+   </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicación Dos, LQF   </h4>
+</div>
+ </div> 
+  
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Clasificación de la telefonía celular</h1>
+ </div>
+ <div data-role="content" align="left">
+  <div>
+   <h2><center>Los celulares se clasifican en 3 tipos:</center></h2>
+     <br>
+      <h4>"Gama baja"<br>
+     Se refiere a los celulares que solo sirven para:
+    <ol type="a" >
+      <li>Hacer llamadas y recibir</li>
+      <li>Enviar y recibir mensajes SMS</li>
+      <li>No tiene soporte de aplicaciones</li>
+      <li>No tiene Internet</li>
+    </ol></h4>
+      <p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gb','','imagenes/no-internet.png',1)"><img src="imagenes/Gama-Baja.jpg" width="399" height="237" id="gb"></a>
+      <h4>"Gama Media"<br>
+     Se refiere a los celulares que sirven para:</center>
+    <ol type="a">
+      <li>Hacer llamadas y recibir</li>
+      <li>Poca Memoria de procesamiento
+      <li>Enviar y recibir mensajes SMS</li>
+      <li>Tienen soporte de aplicaciones</li>
+      <li>Acceso lento a Internet</li>
+</ol> </h4>
+  <p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gm','','imagenes/memoria.jpg',1)"><img src="imagenes/gama-media.jpg" width="399" height="264" id="gm"></a>
+  <hr>
+    <h4>"Gama Alta"<br>
+     Se refiere a los celulares que sirven para:</center>
+    <ol type="a">
+      <li>Hacer llamadas y recibir</li>
+      <li>Gran capacidad Memoria de procesamiento</li>
+      <li>Enviar y recibir mensajes SMS</li>
+      <li>Tienen soporte de aplicaciones grandes</li>
+      <li>Acceso rapido a Internet</li>
+    </ol> </h4>
+    <p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('GA','','imagenes/Hd_Logo.png',1)"><img src="imagenes/gama-alta.jpg" width="382" height="251" id="GA"></a>
+    </div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+  <h4>Aplicación Dos, LQF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Compañias que manejan la telefonía en México</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>Las diferentes compañias de telefonía que se emplean en México son:
+   <br></h2>
+   <h2><b>"Telcel"</b><br></h2>
+   <img src="imagenes/telcel.jpg" width="61%" height="38%"><br>
+   <h4>Telcel forma parte del grupo América Móvil, el mayor proveedor de comunicación celular en Latinoamérica y el tercer lugar a nivel mundial. Cuenta con más de 328 millones de clientes y está presente en 18 países de América. Tan sólo en nuestro continente, América Móvil cuenta con mas de 30 millones de líneas fijas y 262.9 millones de suscriptores móviles.<br></h3>
+<h3>Con 24 años de experiencia, cobertura en más de 200 mil poblaciones y una comunidad de mas de 70 millones de usuarios, Telcel es la empresa líder de telecomunicaciones inalámbricas en México, la compañía de teléfonos celulares de mayor confianza en México y la segunda marca más valiosa de Latinoamérica.</h4>
+<hr>
+
+<h2>"Movistar"<br></h2>
+<img src="imagenes/movistar.png" width="59%" height="37%"><br>
+<h4>Es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.<br></h4>
+<h4>Los productos ofrecidos por MoviStar son: Telefonía para Hogar, Telefonía Móvil (Particular, PyMES y Corporativas), Internet Móvil, Localización Vehicular, TPV o Terminal Punto de Venta (Servicios de Terminales de Cobro Bancarios), Localización de Personas, Comunicación Directa Inmediata Personal o de Flotillas (MovilTalk), planes de Datos, Llamadas y Mensajes por Cobrar (servicio de emergencia entre usuarios de la empresa, siendo pioneros en lanzar este beneficio), Segunda Línea Móvil, Tarjeta de Crédito de Marca Compartida, Tienda de Música, Servicios de Respaldo en la Nube, Protección y Respaldo de Datos de terminales, Internet Satelital, Telefonía Pública, entre otros más.</h4>
+   <hr>
+<h2>"IUSACELL</h2>
+<p><img src="imagenes/iusacell.jpg" width="58%" height="38%"></p>
+<h4>IUSACELL es uno de los operadores de telefonía móvil que actualmente conforman lo que se conoce como AT&T México. El origen de este operador tiene como punto de partida el año 1939, año en el que Alejo Peralta crea lo que se conoce como el Grupo IUSA, una empresa que se dedicaba en un principio a la fabricación de cables y conductores de cobre; y cuyos artículos iniciales eran unos portalámparas, apartarrayos, aisladores, medidores de luz, fusibles, etc.<br>
+</h4>
+<hr>
+  <h2>"Nextel"<br></h2>
+  <img src="imagenes/Nextel.png" width="58%" height="25%"><br>
+ <h4>Nextel es el más efectivo sistema de comunicación móvil integrado para gente que trabaja en equipo, dado que reúne, en un único terminal móvil, los servicios de Conexión Directa individual o grupal (radio digital de doble vía), telefonía móvil, mensajería y transmisión de datos móviles, con la mejor relación costo/beneficio existente hoy en el mercado.<br></h4>
+ <h4>Permite la interconexión a la red telefónica pública desde un equipo Nextel. Cuenta con los conocidos servicios de la tecnología celular y el servicio de Voice Mail, que permite dejar un mensaje de voz cuando el equipo Nextel está ocupado con otra llamada, se encuentra fuera del área de cobertura o está apagado.</h4>
+ <hr>
+   <h2>Unefon<br></h2>
+   <img src="imagenes/Unefon.png" width="74%" height="36%"><br>
+   <h4>Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 y perteneció a Grupo Salinas desde su fundación hasta 2014, cuando la marca fue adquirida por AT&T.1 Alcanzó más de 2.5 millones de suscriptores en el año 2006.<br></h4>
+
+<h4>La red de Unefón fue principalmente CDMA desde su fundación, usando estaciones base no analógicas y posteriormente a partir del 15 de agosto de 2010 continuó únicamente con las estaciones GSM. Actualmente Unefón utiliza la misma infraestructura móvil que AT&T, la cual incluye su más reciente despliegue de la red 4G LTE.</h4>
+   </div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+  <h4>Aplicación Dos, LQF</h4>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Teléfono celulares del futuro</h1>
+ </div>
+ <div data-role="content" align="center">
+  <div>
+   <h2>Se presentan los teléfonos del futuro y sus características</h2>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares Armables</h1>
+    <div>
+    <p align="center">Celulares con las caracteristicas que gustes armandolo tu mismo, a base de bloques con el proposito de que los celulares no sean obsoletos y se pueda actualizar su hardware y software.</p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/Project-Ara.jpg" width="34%" height="34%">
+     </div>
+    </div>
+    
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>Celular en tu muñeca</h1>
+    <div>
+    <p align="center">Consistira en cargar una pulsera de plastico pequeña que proyectara una pantalla completa de un celular en tu muñeca la cual sera tactil.</p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/rollerphone.jpeg" width="416" height="279">
+     </div>
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares Flexibles</h1>
+    <div>
+    <p align="center">Celulares con la capacidad de que sus pantallas sean flexibles, incluyendo una tableta que al doblarse se vuelve celular.</p>
+    <br>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/descarga.jpg" width="343" height="229">
+     </div>
+   </div>
+   
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares ultra durables, livianos y delgados</h1>
+    <div>
+    <p align="center">Los celulares del futuro tendran una gran durabilidad al ser creados con un sustrato plastico que es mas duro, delgado y liviano</p>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/descarga (1).jpg" width="306" height="274"></p>
+    </div>
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares capaces del 3D</h1>
+    <div>
+    <p align="center">La técnologia olografica llegara a los télefonos inteligentes, se trata de la proyección de imagenes tridimensionales, sobre la pantalla, esto se lograra porque los télefonos proyectaran luces, formaran obejetos en 3D que daran la sensación de estar flotando sobre la pantalla.</p>
+   </div>
+   <div>
+     <p align="center"><img src="imagenes/3d.jpg" width="450" height="251"></p>
+    </div>
+   </div>
+   
+<div data-role="footer" data-theme="c" data-position="fixed">
+  <h4>Aplicación Dos,LQF </h4>
+   </div>
+ </div>
+ 
+ 
+ 
+    </body>
+</html>
